@@ -14,10 +14,10 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - uses: Node.js 16:actions/checkout@v2
+      - uses: actions/checkout@v2
 
       - name: Set up .NET Core
-        uses: Node.js 16:actions/setup-dotnet@v1
+        uses: actions/setup-dotnet@v1
         with:
           dotnet-version: '7.x'
           include-prerelease: true
